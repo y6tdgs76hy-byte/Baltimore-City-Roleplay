@@ -9,7 +9,7 @@ export default {
 
         const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setTitle('‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <:1510862153937191056:1510862153937191056> • Baltimore City Roleplay')
+            .setTitle('‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <• Baltimore City Roleplay')
             .setDescription(
                 `Welcome to **BCRP Roleplay**, a realistic and professional Emergency Response: Liberty County roleplay community based off of Baltimore City/County in maryland..\n\n` +
                 `This panel contains all necessary information to help you navigate our **community hub**.\n\n` +
@@ -29,20 +29,24 @@ export default {
             .setPlaceholder('Select an option...')
             .addOptions(
                 {
-                    label: 'Rules',
-                    value: 'rules',
-                    emoji: '📜'
+                    label: 'Server Information',
+                    value: 'information',
+                    emoji: ''
                 },
                 {
-                    label: 'Shop',
-                    value: 'shop',
-                    emoji: '🛒'
+                    label: 'Roblox Rules',
+                    value: 'r rules',
+                    emoji: ''
                 },
                 {
-                    label: 'Self Roles',
-                    value: 'roles',
-                    emoji: '🎭'
-                }
+                    label: 'Discord Rules',
+                    value: 'd rules',
+                    emoji: ''
+                },
+                {
+                    label: 'Shop/Booster Perks',
+                    value: 'shop/perks',
+                    emoji: ''
             );
 
         const row = new ActionRowBuilder().addComponents(menu);
