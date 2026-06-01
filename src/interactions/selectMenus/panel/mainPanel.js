@@ -4,7 +4,7 @@ import { EmbedBuilder } from 'discord.js';
 export default {
     name: 'main_panel',
 
-    async execute(interaction) {
+    async execute(console.log('🔥 MAIN PANEL FIRED');) {
 
         const value = interaction.values[0];
 
