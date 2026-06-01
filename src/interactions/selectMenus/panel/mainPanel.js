@@ -5,37 +5,47 @@ export default {
     name: 'main_panel',
 
     async execute(interaction) {
+
         const value = interaction.values[0];
 
         let embed;
 
-        if (value === 'rules') {
+        if (value === 'information') {
             embed = new EmbedBuilder()
-                .setTitle('📜 Rules')
-                .setDescription('Server + Roblox rules go here')
+                .setTitle('ℹ️ Server Information')
+                .setDescription('Server information goes here.')
+                .setColor('Blue');
+        }
+
+        if (value === 'roblox_rules') {
+            embed = new EmbedBuilder()
+                .setTitle('📜 Roblox Rules')
+                .setDescription('Roblox rules go here.')
                 .setColor('Red');
         }
 
-        if (value === 'shop') {
+        if (value === 'discord_rules') {
             embed = new EmbedBuilder()
-                .setTitle('🛒 Shop')
-                .setDescription('Shop items go here')
+                .setTitle('📜 Discord Rules')
+                .setDescription('Discord rules go here.')
+                .setColor('Red');
+        }
+
+        if (value === 'shop_perks') {
+            embed = new EmbedBuilder()
+                .setTitle('🛒 Shop / Booster Perks')
+                .setDescription('Shop and booster perks go here.')
                 .setColor('Green');
         }
 
-        if (value === 'roles') {
-            embed = new EmbedBuilder()
-                .setTitle('🎭 Self Roles')
-                .setDescription('Role info goes here')
-                .setColor('Purple');
+        if (!embed) {
+            return interaction.reply({
+                content: 'Invalid selection.',
+                ephemeral: true
+            });
         }
 
-        await interaction.update({
-            components: interaction.message.components,
-            embeds: interaction.message.embeds
-        });
-
-        return interaction.followUp({
+        return interaction.reply({
             embeds: [embed],
             ephemeral: true
         });
