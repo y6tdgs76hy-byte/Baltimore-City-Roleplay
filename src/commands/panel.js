@@ -11,7 +11,21 @@ export default {
         .setDescription('Open the server dashboard'),
 
     async execute(interaction) {
+    try {
 
+        console.log("PANEL COMMAND TRIGGERED");
+
+        const embed = new EmbedBuilder()
+            .setTitle("Test Panel")
+            .setDescription("If you see this, command works")
+            .setColor("Blue");
+
+        await interaction.reply({ embeds: [embed] });
+
+    } catch (err) {
+        console.error("🔥 PANEL ERROR:", err);
+    }
+}
         const embed = new EmbedBuilder()
             .setColor('#2b2d31')
             .setTitle('🏛️ Server Dashboard')
