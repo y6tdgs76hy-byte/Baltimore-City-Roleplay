@@ -3,8 +3,8 @@ import { EmbedBuilder } from 'discord.js';
 
 export default {
     name: 'main_panel',
-    
-    async execute(interaction, client) {
+
+    async execute(interaction) {
         const value = interaction.values[0];
 
         let embed;
@@ -12,30 +12,32 @@ export default {
         if (value === 'rules') {
             embed = new EmbedBuilder()
                 .setTitle('📜 Rules')
-                .setDescription(
-                    '**Discord Rules:**\n- Be respectful\n- No spamming\n\n' +
-                    '**Roblox Rules:**\n- No exploiting\n- No cheating'
-                )
+                .setDescription('Server + Roblox rules go here')
                 .setColor('Red');
         }
 
         if (value === 'shop') {
             embed = new EmbedBuilder()
                 .setTitle('🛒 Shop')
-                .setDescription('Nothing here yet — we’ll build it next.')
+                .setDescription('Shop items go here')
                 .setColor('Green');
         }
 
         if (value === 'roles') {
             embed = new EmbedBuilder()
                 .setTitle('🎭 Self Roles')
-                .setDescription('Role system coming next step.')
+                .setDescription('Role info goes here')
                 .setColor('Purple');
         }
 
         await interaction.update({
+            components: interaction.message.components,
+            embeds: interaction.message.embeds
+        });
+
+        return interaction.followUp({
             embeds: [embed],
-            components: interaction.message.components
+            ephemeral: true
         });
     }
 };
