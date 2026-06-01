@@ -16,7 +16,7 @@ export default {
             )
             .setColor('Blue')
             .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
-            .setImage('https://i.imgur.com/yourBanner.png'); // optional banner
+            .setImage('https://cdn.discordapp.com/attachments/1486538796907499531/1510858355634339850/Screenshot_2026-05-31_101241.png?ex=6a1e57fe&is=6a1d067e&hm=c3c25ca665140248ba2a9ed8716c2b7bac52c1c432ec596c836a5512cdc27571'); // optional banner
 
         const menu = new StringSelectMenuBuilder()
             .setCustomId('main_panel')
