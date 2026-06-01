@@ -9,17 +9,12 @@ export default {
 
         const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setTitle('‎ ‎ <:PMBRP:1360042975413145741> • PMBRP')
+            .setTitle('📌 Server Panel')
             .setDescription(
-                `Welcome to **PMBRP Roleplay**, a realistic and professional Emergency Response: Liberty County community.\n\n` +
-                `Use the dropdown below to navigate the server panel.\n\n` +
-                `━━━━━━━━━━━━━━━━━━━━\n` +
-                `📌 Applications & Forms\n` +
-                `🎭 Self Roles\n` +
-                `🛒 Shop & Perks`
+                'Welcome to the server panel.\n\nSelect an option below to continue.'
             )
-            .setImage('PASTE_BANNER_URL_HERE')
-            .setFooter({ text: 'PMBRP Roleplay • Panel System' });
+            .setImage('PASTE_YOUR_BANNER_URL_HERE')
+            .setFooter({ text: 'Server Panel System' });
 
         const menu = new StringSelectMenuBuilder()
             .setCustomId('main_panel')
