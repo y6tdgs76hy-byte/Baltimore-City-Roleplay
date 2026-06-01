@@ -21,7 +21,7 @@ export default {
                 `🎭 **Self Roles & Reaction Roles**\n` +
                 `Select your roles using the menu below`
             )
-            .setImage('PASTE_YOUR_BANNER_LINK_HERE')
+            .setImage('https://cdn.discordapp.com/attachments/1486538796907499531/1510858355634339850/Screenshot_2026-05-31_101241.png?ex=6a1e57fe&is=6a1d067e&hm=c3c25ca665140248ba2a9ed8716c2b7bac52c1c432ec596c836a5512cdc27571')
             .setFooter({ text: 'BCRP Roleplay • Interactive Panel' });
 
         const menu = new StringSelectMenuBuilder()
