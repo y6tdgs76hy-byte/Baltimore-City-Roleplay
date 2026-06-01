@@ -9,7 +9,7 @@ export default {
 
         const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setTitle('‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <:Baltimore:1510862153937191056> • Baltimore City Roleplay')
+            .setTitle('‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <:1510862153937191056:1510862153937191056> • Baltimore City Roleplay')
             .setDescription(
                 `Welcome to **BCRP Roleplay**, a realistic and professional Emergency Response: Liberty County roleplay community based off of Baltimore City/County in maryland..\n\n` +
                 `This panel contains all necessary information to help you navigate our **community hub**.\n\n` +
