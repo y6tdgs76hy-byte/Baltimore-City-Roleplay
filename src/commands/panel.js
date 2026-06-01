@@ -28,26 +28,27 @@ export default {
             .setCustomId('main_panel')
             .setPlaceholder('Select an option...')
             .addOptions(
-                {
-                    label: 'Server Information',
-                    value: 'information',
-                    emoji: ''
-                },
-                {
-                    label: 'Roblox Rules',
-                    value: 'r rules',
-                    emoji: ''
-                },
-                {
-                    label: 'Discord Rules',
-                    value: 'd rules',
-                    emoji: ''
-                },
-                {
-                    label: 'Shop/Booster Perks',
-                    value: 'shop/perks',
-                    emoji: ''
-            );
+    {
+        label: 'Server Information',
+        value: 'information',
+        emoji: ''
+    },
+    {
+        label: 'Roblox Rules',
+        value: 'roblox_rules',
+        emoji: ''
+    },
+    {
+        label: 'Discord Rules',
+        value: 'discord_rules',
+        emoji: ''
+    },
+    {
+        label: 'Shop / Booster Perks',
+        value: 'shop_perks',
+        emoji: ''
+    }
+)
 
         const row = new ActionRowBuilder().addComponents(menu);
 
