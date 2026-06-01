@@ -8,15 +8,21 @@ export default {
     async execute(interaction) {
 
         const embed = new EmbedBuilder()
-            .setTitle('📌 Server Panel')
-            .setDescription(
-                'Welcome to the server panel.\n\n' +
-                'Use the dropdown below to navigate:\n' +
-                '📜 Rules\n🛒 Shop\n🎭 Self Roles'
-            )
             .setColor('Blue')
-            .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
-            .setImage('https://cdn.discordapp.com/attachments/1486538796907499531/1510858355634339850/Screenshot_2026-05-31_101241.png?ex=6a1e57fe&is=6a1d067e&hm=c3c25ca665140248ba2a9ed8716c2b7bac52c1c432ec596c836a5512cdc27571'); // optional banner
+            .setTitle('‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <:PMBRP:1360042975413145741> • Baltimore City Roleplay')
+            .setDescription(
+                `Welcome to **BCRP Roleplay**, a realistic and professional Emergency Response: Liberty County roleplay community based off of Baltimore City/County in maryland..\n\n` +
+                `This panel contains all necessary information to help you navigate our **community hub**.\n\n` +
+                `━━━━━━━━━━━━━━━━━━━━\n` +
+                `📌 **Applications & Forms**\n` +
+                `🧾 Staff Applications\n` +
+                `🚔 Department Applications\n\n` +
+                `━━━━━━━━━━━━━━━━━━━━\n` +
+                `🎭 **Self Roles & Reaction Roles**\n` +
+                `Select your roles using the menu below`
+            )
+            .setImage('PASTE_YOUR_BANNER_LINK_HERE')
+            .setFooter({ text: 'BCRP Roleplay • Interactive Panel' });
 
         const menu = new StringSelectMenuBuilder()
             .setCustomId('main_panel')
